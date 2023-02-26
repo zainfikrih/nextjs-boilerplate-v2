@@ -8,6 +8,10 @@ import { useEffect, useState } from 'react'
 import { Button } from '@mantine/core'
 import { IconPlus } from '@tabler/icons-react'
 import { Fade, Bounce } from "react-awesome-reveal";
+import IProduct from '@/types/IProduct.type'
+import ProductService from '@/services/product.service'
+import { AxiosResponse } from 'axios'
+import { type } from 'os'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,8 +24,11 @@ export default function Home() {
   const bearsPersist = useBearPersistStore((state) => state.bears)
   const increasePopulationPersist = useBearPersistStore((state) => state.increase)
 
+  const [product, setProduct] = useState<IProduct>()
+
   useEffect(() => {
     setBearsPersistLoaded(bearsPersist)
+    getProductAsync()
   }, [bearsPersist])
 
   function BearCounter() {
@@ -42,6 +49,14 @@ export default function Home() {
     return <Button leftIcon={<IconPlus size={14} />} onClick={() => increasePopulationPersist(1)}>
       One up
     </Button>
+  }
+
+  const getProductAsync = async () => {
+    ProductService.getAll().then((response: AxiosResponse<IProduct>) => {
+      console.log(response)
+    }).catch((e: Error) => {
+      console.log(e)
+    })
   }
 
   return (
