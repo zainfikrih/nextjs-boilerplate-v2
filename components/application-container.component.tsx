@@ -36,7 +36,7 @@ export default function ApplicationContainer({ children }: ApplicationContainerP
             header={
                 <Header height={70} p="md">
                     <div style={{ display: "flex", alignItems: 'center', height: "100%" }}>
-                        <Text size="lg" weight="bolder">Next App</Text>
+                        <Text size="lg" weight="bolder">Create Next App</Text>
                     </div>
                 </Header>
             }
