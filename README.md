@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Tech Stack
+
+1. [TypeScript](https://github.com/microsoft/TypeScript)
+2. [Next.js](https://nextjs.org/)
+3. [Mantine UI](https://mantine.dev/)
+4. [Tabler Icons](https://tabler-icons.io/)
+5. [React Awesome Reveal](https://react-awesome-reveal.morello.dev/)
+6. [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
+7. [Axios](https://axios-http.com/docs/intro)
+
 ## Getting Started
 
 First, run the development server:
