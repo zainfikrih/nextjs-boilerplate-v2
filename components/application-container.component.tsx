@@ -29,7 +29,7 @@ export default function ApplicationContainer({ children }: ApplicationContainerP
                             Made with ❤️ using <span style={{ fontWeight: "bolder" }}>Next.js</span>
                         </Text>
                         <Text size="sm">Other Libs: <span style={{ fontWeight: "bolder" }}
-                        >Mantine UI, Zustand, Tabler Icons, react-awesome-reveal</span></Text>
+                        >Mantine UI, Zustand, Tabler Icons, React Awesome Reveal, Axios</span></Text>
                     </Group>
                 </Footer>
             }
